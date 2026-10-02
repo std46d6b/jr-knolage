@@ -6,9 +6,8 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: ru-RU
-  # Перед деплоем замените на домен без https:// и завершающего /.
-  # Для GitHub Pages с project site: username.github.io/repository-name
-  baseUrl: example.com
+  # Домен указывается без схемы и завершающего /.
+  baseUrl: kb.svc.m5k.ru
   ignorePatterns:
     - private
     - templates
