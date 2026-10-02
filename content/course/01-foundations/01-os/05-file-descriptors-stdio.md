@@ -9,6 +9,8 @@ tags:
   - os
 status: complete
 difficulty: e4
+created: 2026-10-02
+updated: 2026-10-02
 draft: false
 ---
 
@@ -134,7 +136,7 @@ func copyFile(dst, src string) (err error) {
 
 ## Связанные темы
 
-[[course/01-foundations/index|База разработки и Computer Science]] · [[course/01-foundations/01-os/01-processes-threads|Процессы и потоки]] · [[course/01-foundations/01-os/02-virtual-memory|Виртуальная память]] · [[course/01-foundations/01-os/06-unix-signals|Сигналы Unix]] · [[course/02-go|Go: runtime и стандартная библиотека]] · [[course/03-go-application-design|Проектирование Go-приложений]] · [[course/09-linux-networking|Linux, сети и cloud]]
+[[course/01-foundations|База разработки и Computer Science]] · [[course/01-foundations/01-os/01-processes-threads-goroutines|Процессы, потоки и goroutine]] · [[course/01-foundations/01-os/03-virtual-memory-stack-heap-mmap|Виртуальная память]] · [[course/01-foundations/01-os/06-unix-signals|Сигналы Unix]] · [[course/02-go|Go: runtime и стандартная библиотека]] · [[course/03-go-application-design|Проектирование Go-приложений]] · [[course/09-linux-networking|Linux, сети и cloud]]
 
 ## Источники
 

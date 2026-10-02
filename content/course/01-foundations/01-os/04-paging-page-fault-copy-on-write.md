@@ -9,6 +9,8 @@ tags:
   - interview
 status: complete
 difficulty: e4
+created: 2026-10-02
+updated: 2026-10-02
 draft: false
 ---
 

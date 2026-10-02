@@ -9,6 +9,8 @@ tags:
   - interview
 status: complete
 difficulty: e4
+created: 2026-10-02
+updated: 2026-10-02
 draft: false
 ---
 
@@ -154,7 +156,7 @@ func main() {
 
 ## Связанные темы
 
-[[course/01-foundations/index|База разработки и Computer Science]] · [[course/01-foundations/01-os/01-processes-threads|Процессы и потоки]] · [[course/01-foundations/01-os/03-process-synchronization|Синхронизация процессов]] · [[course/01-foundations/01-os/05-file-descriptors-stdio|Файловые дескрипторы и stdio]] · [[course/02-go|Go: runtime и стандартная библиотека]] · [[course/03-go-application-design|Проектирование Go-приложений]] · [[course/09-linux-networking|Linux, сети и cloud]]
+[[course/01-foundations|База разработки и Computer Science]] · [[course/01-foundations/01-os/01-processes-threads-goroutines|Процессы, потоки и goroutine]] · [[course/01-foundations/01-os/05-file-descriptors-stdio|Файловые дескрипторы и stdio]] · [[course/01-foundations/01-os/08-syscalls-user-kernel-boundary|Системные вызовы]] · [[course/02-go|Go: runtime и стандартная библиотека]] · [[course/03-go-application-design|Проектирование Go-приложений]] · [[course/09-linux-networking|Linux, сети и cloud]]
 
 ## Источники
 

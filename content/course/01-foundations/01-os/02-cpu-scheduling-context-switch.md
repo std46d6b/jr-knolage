@@ -9,6 +9,8 @@ tags:
   - interview
 status: complete
 difficulty: e4
+created: 2026-10-02
+updated: 2026-10-02
 draft: false
 ---
 
@@ -78,7 +80,7 @@ Context switch включает работу ядра с регистрами, �
 
 ## Связанные темы
 
-[[course/01-foundations/01-os|Операционные системы]] · [[course/01-foundations/01-os/01-processes-threads-goroutines|Процессы, потоки и goroutine]] · [[course/01-foundations/01-os/03-virtual-memory-paging|Виртуальная память и paging]] · [[course/01-foundations/01-os/07-namespaces-cgroups|Namespaces и cgroups]] · [[course/02-go|Go]] · [[course/10-observability|Наблюдаемость]]
+[[course/01-foundations/01-os|Операционные системы]] · [[course/01-foundations/01-os/01-processes-threads-goroutines|Процессы, потоки и goroutine]] · [[course/01-foundations/01-os/03-virtual-memory-stack-heap-mmap|Виртуальная память]] · [[course/02-go|Go]] · [[course/10-observability|Наблюдаемость]]
 
 ## Источники
 

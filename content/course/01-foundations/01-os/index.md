@@ -8,6 +8,8 @@ tags:
   - interview
 status: complete
 difficulty: foundation
+created: 2026-10-02
+updated: 2026-10-02
 draft: false
 ---
 
@@ -19,12 +21,12 @@ draft: false
 
 1. [[course/01-foundations/01-os/01-processes-threads-goroutines|Процессы, потоки и goroutine]] — единицы изоляции и исполнения.
 2. [[course/01-foundations/01-os/02-cpu-scheduling-context-switch|Планирование CPU и переключение контекста]] — конкуренция за ядра и цена переключений.
-3. [[course/01-foundations/01-os/03-virtual-memory-paging|Виртуальная память и страничная адресация]] — адресные пространства, page fault и давление на память.
-4. [[course/01-foundations/01-os/04-synchronization-deadlocks|Синхронизация и взаимные блокировки]] — mutex, condition variable и deadlock.
-5. [[course/01-foundations/01-os/05-files-descriptors-io|Файлы, дескрипторы и I/O]] — системные вызовы, буферизация и утечки FD.
+3. [[course/01-foundations/01-os/03-virtual-memory-stack-heap-mmap|Виртуальная память: stack, heap и mmap]] — адресные пространства и отображения памяти.
+4. [[course/01-foundations/01-os/04-paging-page-fault-copy-on-write|Paging, page fault и copy-on-write]] — страничная адресация и стоимость работы с памятью.
+5. [[course/01-foundations/01-os/05-file-descriptors-stdio|Файловые дескрипторы и stdio]] — системные вызовы, буферизация и утечки FD.
 6. [[course/01-foundations/01-os/06-unix-signals|Сигналы Unix и жизненный цикл процесса]] — graceful shutdown и supervisor.
-7. [[course/01-foundations/01-os/07-namespaces-cgroups|Namespaces и cgroups]] — контейнерная изоляция и ресурсы.
-8. [[course/01-foundations/01-os/08-linux-observability|Диагностика Linux-процесса]] — `/proc`, `strace`, `perf` и проверка гипотез.
+7. [[course/01-foundations/01-os/07-ipc-pipes-sockets-shared-memory|IPC: pipe, socket и shared memory]] — обмен между процессами и границы изоляции.
+8. [[course/01-foundations/01-os/08-syscalls-user-kernel-boundary|Syscall и граница user/kernel space]] — переход в ядро, контракты вызовов и их стоимость.
 
 ## Зачем это на интервью
 
