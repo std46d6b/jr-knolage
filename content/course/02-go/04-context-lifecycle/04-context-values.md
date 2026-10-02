@@ -133,5 +133,5 @@ Imports: `net/http`, `strings`. Не доверяйте header как безоп
 
 - [Go `context` package documentation](https://pkg.go.dev/context#Context) — intended use of values and key guidance.
 - [Go blog: Context](https://go.dev/blog/context) — request-scoped data rationale.
-- [OpenTelemetry Go context propagation](https://opentelemetry.io/docs/languages/go/propagation/) — standard trace propagation.
+- [OpenTelemetry Go context propagation](https://opentelemetry.io/docs/languages/go/instrumentation/) — standard trace propagation.
 - [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — PII и safe logging.

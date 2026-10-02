@@ -65,8 +65,10 @@ func Fetch(ctx context.Context, url string) ([]byte, error) {
     resp, err := client.Do(req)
     if err != nil { return nil, fmt.Errorf("catalog request: %w", err) }
     defer resp.Body.Close()
-    body, err := io.ReadAll(io.LimitReader(resp.Body, 1<<20))
+    const maxBody = 1 << 20
+    body, err := io.ReadAll(io.LimitReader(resp.Body, maxBody+1))
     if err != nil { return nil, fmt.Errorf("read catalog response: %w", err) }
+    if len(body) > maxBody { return nil, fmt.Errorf("catalog response exceeds %d bytes", maxBody) }
     if resp.StatusCode < 200 || resp.StatusCode > 299 { return nil, fmt.Errorf("catalog status %s: %q", resp.Status, body) }
     return body, nil
 }

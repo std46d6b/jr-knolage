@@ -1,6 +1,6 @@
 ---
 title: "Основы языка Go"
-description: "Последовательный конспект по пакетам, типам, коллекциям, структурам, функциям, интерфейсам, ошибкам, управлению потоком, generics и модулям Go."
+description: "Последовательный конспект по пакетам, типам, коллекциям, структурам, функциям, методам, интерфейсам, generics, defer/panic и ошибкам Go."
 tags:
   - go
   - language
@@ -27,17 +27,17 @@ draft: false
 3. [[course/02-go/01-language/03-arrays-slices-maps-strings|Массивы, срезы, map и строки]] — backing array, capacity, aliasing, UTF-8 и конкурентный доступ.
 4. [[course/02-go/01-language/04-structs-embedding-tags|Структуры, embedding и теги]] — композиция, promotion, DTO и метаданные библиотек.
 5. [[course/02-go/01-language/05-functions-pointers-value-semantics|Функции, указатели и семантика значений]] — copy semantics, receivers, замыкания и ownership.
-6. [[course/02-go/01-language/06-methods-interfaces-composition|Методы, интерфейсы и композиция]] — method sets, неявная реализация и границы зависимостей.
-7. [[course/02-go/01-language/07-errors-panics-recover|Ошибки, panic и recover]] — error contracts, wrapping, sentinel/typed errors и аварийные пути.
-8. [[course/02-go/01-language/08-control-flow-defer|Управление потоком и defer]] — `if`, `for`, `switch`, `range`, scope и гарантированное освобождение ресурсов.
-9. [[course/02-go/01-language/09-generics-type-parameters|Generics и параметры типов]] — constraints, type sets, inference и границы обобщений.
-10. [[course/02-go/01-language/10-modules-imports-tooling|Модули, импорты и tooling]] — `go.mod`, версии, зависимости и базовые команды Go.
+6. [[course/02-go/01-language/06-methods-receivers|Методы и receivers]] — method sets, value/pointer receivers и последовательный API.
+7. [[course/02-go/01-language/07-interfaces-nil-type-assertions|Интерфейсы, nil и type assertions]] — неявная реализация, typed nil и безопасная динамическая типизация.
+8. [[course/02-go/01-language/08-generics|Generics и параметры типов]] — constraints, type sets, inference и границы обобщений.
+9. [[course/02-go/01-language/09-defer-panic-recover|defer, panic и recover]] — освобождение ресурсов, аварийные пути и границы recovery.
+10. [[course/02-go/01-language/10-errors|Ошибки и error contracts]] — wrapping, sentinel/typed errors, `errors.Is` и `errors.As`.
 
 ## Рекомендуемый порядок
 
 1. Страницы 1–5 дают модель областей имён, значений и памяти.
-2. Страницы 6–8 соединяют модель с API, обработкой сбоев и обычным кодовым потоком.
-3. Страницы 9–10 помогают выбирать уровень абстракции и поддерживать воспроизводимую сборку.
+2. Страницы 6–7 соединяют модель с method sets, интерфейсными границами и безопасной динамической типизацией.
+3. Страницы 8–10 закрепляют выбор обобщений, безопасное освобождение ресурсов и error contracts. Модули и tooling изучайте в [[course/02-go/07-tools|разделе инструментов]].
 
 Не переходите к конкурентности, пока не можете без запуска объяснить различие `[]T`, `*[]T`, `map[K]V`, `T` и `*T`: эти представления определяют ownership и риск data race.
 
@@ -51,7 +51,7 @@ draft: false
 
 ## Связанные темы
 
-[[course/02-go|Go: язык, runtime и стандартная библиотека]] · [[course/02-go/02-concurrency|Конкурентность Go]] · [[course/02-go/03-runtime-memory|Runtime и память Go]] · [[course/02-go/04-standard-library|Стандартная библиотека Go]]
+[[course/02-go|Go: язык, runtime и стандартная библиотека]] · [[course/02-go/03-concurrency|Конкурентность Go]] · [[course/02-go/05-runtime-memory|Runtime и память Go]] · [[course/02-go/06-stdlib-practical|Стандартная библиотека Go]]
 
 ## Источники
 

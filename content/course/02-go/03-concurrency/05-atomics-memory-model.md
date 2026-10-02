@@ -123,7 +123,7 @@ func main() {
 
 ## Связанные темы
 
-[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/04-sync-primitives|sync-примитивы]] · [[course/02-go/03-concurrency/06-races-deadlocks-and-race-detector|Гонки и race detector]] · [[course/01-foundations/02-performance/04-false-sharing|False sharing]]
+[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/04-sync-primitives|sync-примитивы]] · [[course/02-go/03-concurrency/06-race-deadlock-livelock-starvation|Гонки и race detector]] · [[course/01-foundations/02-performance/04-false-sharing|False sharing]]
 
 ## Источники
 

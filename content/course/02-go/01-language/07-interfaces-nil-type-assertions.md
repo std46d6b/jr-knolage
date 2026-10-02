@@ -37,6 +37,9 @@ package main
 
 import "fmt"
 
+type FileStore struct{}
+func (*FileStore) String() string { return "file store" }
+
 type Worker interface {
     Work() string
 }
@@ -89,10 +92,13 @@ func describe(v any) string {
         return "nil interface"
     case string:
         return "string: " + x
-    case fmt.Stringer:
+    case *FileStore:
         if x == nil {
-            return "nil Stringer"
+            return "typed-nil *FileStore"
         }
+        return x.String()
+    case fmt.Stringer:
+        // x — non-nil interface even when it contains a typed-nil pointer.
         return x.String()
     default:
         return fmt.Sprintf("unknown %T", x)

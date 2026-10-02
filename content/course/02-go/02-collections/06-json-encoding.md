@@ -49,9 +49,16 @@ func decodeUser(r io.Reader) (User, error) {
 }
 
 type Status uint8
+const (New Status = iota; Done)
 func (s Status) MarshalJSON() ([]byte, error) {
-	if s > 1 { return nil, fmt.Errorf("invalid status: %d", s) }
-	return json.Marshal(map[Status]string{0: "new", 1: "done"}[s])
+	if s > Done { return nil, fmt.Errorf("invalid status: %d", s) }
+	return json.Marshal(map[Status]string{New: "new", Done: "done"}[s])
+}
+func (s *Status) UnmarshalJSON(b []byte) error {
+	var text string
+	if err := json.Unmarshal(b, &text); err != nil { return err }
+	switch text { case "new": *s = New; case "done": *s = Done; default: return fmt.Errorf("invalid status %q", text) }
+	return nil
 }
 ```
 
@@ -65,8 +72,8 @@ func (s Status) MarshalJSON() ([]byte, error) {
    - Не выводит поле с пустым значением по правилам пакета.
 3. **Как отклонить неизвестные поля?**
    - `Decoder.DisallowUnknownFields()` до `Decode`.
-4. **Когда писать `MarshalJSON`?**
-   - Когда внешний формат или инвариант не выражается тегами; обычные struct tags предпочтительнее.
+4. **Когда писать `MarshalJSON` и `UnmarshalJSON`?**
+   - Когда внешний формат или инвариант не выражается тегами; реализуйте обе стороны, если тип также принимает JSON, и валидируйте вход в `UnmarshalJSON`.
 5. **Почему нельзя игнорировать ошибку Encoder?**
    - Запись в `io.Writer` может не выполниться; ответ клиенту окажется неполным.
 

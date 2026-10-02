@@ -113,7 +113,7 @@ func main() {
 
 ## Связанные темы
 
-[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/05-atomics-memory-model|Атомарные операции]] · [[course/02-go/03-concurrency/06-races-deadlocks-and-race-detector|Гонки и deadlock]] · [[course/02-go/03-concurrency/08-worker-pool|Worker pool]]
+[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/05-atomics-memory-model|Атомарные операции]] · [[course/02-go/03-concurrency/06-race-deadlock-livelock-starvation|Гонки и deadlock]] · [[course/02-go/03-concurrency/07-fanout-fanin-worker-pool|Worker pool]]
 
 ## Источники
 

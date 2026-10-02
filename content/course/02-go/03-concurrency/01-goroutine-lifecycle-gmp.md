@@ -110,11 +110,11 @@ P содержит локальную очередь runnable G и нужен M 
 
 ## Связанные темы
 
-[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/04-sync-primitives|sync-примитивы]] · [[course/02-go/03-concurrency/09-pipeline-cancellation|Pipeline и отмена]] · [[course/01-foundations/01-os/02-cpu-scheduling-context-switch|Планирование CPU]]
+[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/04-sync-primitives|sync-примитивы]] · [[course/02-go/03-concurrency/08-pipelines-cancellation|Pipeline и отмена]] · [[course/01-foundations/01-os/02-cpu-scheduling-context-switch|Планирование CPU]]
 
 ## Источники
 
 - [Package runtime: GOMAXPROCS](https://pkg.go.dev/runtime#GOMAXPROCS)
-- [Go blog: Go's work-stealing scheduler](https://go.dev/blog/scheduler)
+- [Go blog: Go's work-stealing scheduler](https://go.dev/s/go11sched)
 - [Go execution tracer](https://go.dev/doc/diagnostics#tracing)
 - [Go FAQ: goroutines](https://go.dev/doc/faq#goroutines)

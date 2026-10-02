@@ -68,7 +68,7 @@ Race detector инструментирует memory accesses и сообщает
 
 ## Связанные темы
 
-[[course/02-go/07-tools|Инструменты Go]] · [[course/12-testing|Тестирование]] · [[course/02-go/06-concurrency|Конкурентность Go]]
+[[course/02-go/07-tools|Инструменты Go]] · [[course/12-testing|Тестирование]] · [[course/02-go/03-concurrency|Конкурентность Go]]
 
 ## Источники
 

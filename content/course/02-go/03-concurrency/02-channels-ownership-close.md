@@ -95,7 +95,7 @@ func main() {
 
 ## Связанные темы
 
-[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/03-select-and-nil-channels|select и nil-каналы]] · [[course/02-go/03-concurrency/07-fan-out-fan-in|Fan-out/fan-in]] · [[course/02-go/03-concurrency/09-pipeline-cancellation|Pipeline и отмена]]
+[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/03-select-and-nil-channels|select и nil-каналы]] · [[course/02-go/03-concurrency/07-fanout-fanin-worker-pool|Fan-out/fan-in]] · [[course/02-go/03-concurrency/08-pipelines-cancellation|Pipeline и отмена]]
 
 ## Источники
 

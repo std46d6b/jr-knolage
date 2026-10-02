@@ -19,13 +19,14 @@ draft: false
 
 ## Минимум для E4
 
-- [ ] Форматировать исходники `gofmt -w .` или проверять CI: `test -z "$(gofmt -l .)"`.
+- [ ] Форматировать исходники `gofmt -w $(find . -path ./vendor -prune -o -name '*.go' -print)` или проверять CI тем же списком файлов.
 - [ ] Запускать `go vet ./...` вместе с тестами.
 - [ ] Понимать, что `goimports` форматирует и добавляет/удаляет импорты, но является внешним инструментом.
 - [ ] Исправлять предупреждение либо документированно подавлять его точечно, а не выключать весь анализатор.
 
 ```bash
-gofmt -w .
+gofmt -w $(find . -path ./vendor -prune -o -name '*.go' -print)
+test -z "$(find . -path ./vendor -prune -o -name '*.go' -print0 | xargs -0 gofmt -l)"
 go vet ./...
 go install honnef.co/go/tools/cmd/staticcheck@latest
 staticcheck ./...

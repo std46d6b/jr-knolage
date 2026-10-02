@@ -98,7 +98,7 @@ Embedding экономит запись, но может размыть API. П�
 
 ## Связанные темы
 
-[[course/02-go|Go]] · [[course/02-go/01-language|Основы языка Go]] · [[course/02-go/01-language/05-functions-pointers-value-semantics|Указатели и семантика значений]] · [[course/02-go/01-language/06-methods-interfaces-composition|Методы, интерфейсы и композиция]]
+[[course/02-go|Go]] · [[course/02-go/01-language|Основы языка Go]] · [[course/02-go/01-language/05-functions-pointers-value-semantics|Указатели и семантика значений]] · [[course/02-go/01-language/06-methods-receivers|Методы, интерфейсы и композиция]]
 
 ## Источники
 

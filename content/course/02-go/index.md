@@ -20,12 +20,14 @@ draft: false
 
 ## Темы
 
-- Types, zero values, slices, maps, strings, structs, methods, interfaces, errors и generics.
-- Slice aliasing, append/reallocation, map concurrency, UTF-8 и bytes/runes.
-- Goroutines, channels, select, mutex/RWMutex, WaitGroup, atomic, race/deadlock/starvation.
-- context cancellation/deadline, graceful shutdown, утечки goroutines.
-- G-M-P scheduler, escape analysis, GC, pprof, trace, race detector.
-- net/http, http.Client/Transport, io, database/sql, slog, time и encoding/json.
+- [[course/02-go/01-language|Основы языка]]: packages, visibility, types, values, methods, interfaces, generics, `defer`, `panic` и errors.
+- [[course/02-go/02-collections|Коллекции и работа с данными]]: slices, maps, strings, JSON, форматы данных и time.
+- [[course/02-go/03-concurrency|Concurrency]]: goroutines, channels, `select`, `sync`, atomic, race conditions, worker pools и graceful shutdown.
+- [[course/02-go/04-context-lifecycle|Context и жизненный цикл]]: cancellation, deadlines, budgets, values, утечки ресурсов и остановка сервиса.
+- [[course/02-go/05-runtime-memory|Runtime и memory management]]: scheduler, stacks, escape analysis, heap, GC, `unsafe` и cgo.
+- [[course/02-go/06-stdlib-practical|Стандартная библиотека и практический Go]]: HTTP, SQL, I/O, filesystem, encoding, crypto, `slog`, configuration и testing.
+- [[course/02-go/07-tools|Инструменты Go]]: modules, formatters, linters, tests, benchmarks, pprof, trace, escape analysis и Delve.
+- [[course/02-go/08-interview-code|Go-код на интервью]]: чтение, рефакторинг, ошибки, observability, API пакета, mockability и code review.
 
 ## Минимум для E4
 

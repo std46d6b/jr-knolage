@@ -100,7 +100,7 @@ func main() {
 
 ## Связанные темы
 
-[[course/02-go|Go]] · [[course/02-go/01-language|Основы языка Go]] · [[course/02-go/01-language/04-structs-embedding-tags|Структуры, embedding и теги]] · [[course/02-go/01-language/10-modules-imports-tooling|Модули, импорты и tooling]]
+[[course/02-go|Go]] · [[course/02-go/01-language|Основы языка Go]] · [[course/02-go/01-language/04-structs-embedding-tags|Структуры, embedding и теги]] · [[course/02-go/07-tools/01-go-modules-versioning-vendor|Модули, импорты и tooling]]
 
 ## Источники
 

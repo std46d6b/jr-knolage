@@ -110,7 +110,7 @@ Go не обещает строгую fairness: при нескольких го
 
 ## Связанные темы
 
-[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/02-channels-ownership-close|Каналы и close]] · [[course/02-go/03-concurrency/09-pipeline-cancellation|Pipeline и отмена]] · [[course/02-go/04-context|Context]]
+[[course/02-go/03-concurrency|Конкурентность]] · [[course/02-go/03-concurrency/02-channels-ownership-close|Каналы и close]] · [[course/02-go/03-concurrency/08-pipelines-cancellation|Pipeline и отмена]] · [[course/02-go/04-context-lifecycle|Context]]
 
 ## Источники
 

@@ -28,12 +28,12 @@ draft: false
 3. [[course/02-go/03-concurrency/03-select-and-nil-channels|select, blocking, default и nil-каналы]]
 4. [[course/02-go/03-concurrency/04-sync-primitives|sync: Mutex, RWMutex, WaitGroup, Once, Cond, Pool и Map]]
 5. [[course/02-go/03-concurrency/05-atomics-memory-model|Атомарные операции и модель памяти Go]]
-6. [[course/02-go/03-concurrency/06-races-deadlocks-and-race-detector|Data race, deadlock, starvation и race detector]]
-7. [[course/02-go/03-concurrency/07-fan-out-fan-in|Fan-out и fan-in]]
-8. [[course/02-go/03-concurrency/08-worker-pool|Worker pool]]
-9. [[course/02-go/03-concurrency/09-pipeline-cancellation|Pipeline и отмена]]
-10. [[course/02-go/03-concurrency/10-semaphore-rate-limiting|Semaphore и rate limiting]]
-11. [[course/02-go/03-concurrency/11-graceful-shutdown|Graceful shutdown]]
+6. [[course/02-go/03-concurrency/06-race-deadlock-livelock-starvation|Data race, deadlock, starvation и race detector]]
+7. [[course/02-go/03-concurrency/07-fanout-fanin-worker-pool|Fan-out, fan-in и worker pool]]
+8. [[course/02-go/03-concurrency/08-pipelines-cancellation|Pipeline и отмена]]
+9. [[course/02-go/03-concurrency/09-semaphore-rate-limiting|Semaphore и rate limiting]]
+10. [[course/02-go/03-concurrency/10-graceful-shutdown|Graceful shutdown]]
+11. [[course/02-go/03-concurrency/11-concurrency-interview-tasks|Конкурентные задачи на интервью]]
 
 ## Минимум для E4
 
@@ -82,7 +82,7 @@ draft: false
 
 ## Связанные темы
 
-[[course/02-go|Go]] · [[course/02-go/04-context|Context и жизненный цикл]] · [[course/02-go/05-runtime-memory|Runtime и управление памятью]] · [[course/10-observability|Наблюдаемость]] · [[course/12-testing|Тестирование]]
+[[course/02-go|Go]] · [[course/02-go/04-context-lifecycle|Context и жизненный цикл]] · [[course/02-go/05-runtime-memory|Runtime и управление памятью]] · [[course/10-observability|Наблюдаемость]] · [[course/12-testing|Тестирование]]
 
 ## Источники
 

@@ -128,7 +128,7 @@ Imports: `context`, `errors`, `fmt`, `net/http`. У `http.Client` можно з�
 
 ## Связанные темы
 
-[[course/02-go/04-context-lifecycle|Context и жизненный цикл]] · [[course/02-go/04-context-lifecycle/03-deadline-budgets|Бюджеты дедлайнов]] · [[course/02-go/04-context-lifecycle/06-service-shutdown|Shutdown сервиса]] · [[course/02-go/02-concurrency|Конкурентность Go]]
+[[course/02-go/04-context-lifecycle|Context и жизненный цикл]] · [[course/02-go/04-context-lifecycle/03-deadline-budgets|Бюджеты дедлайнов]] · [[course/02-go/04-context-lifecycle/06-service-shutdown|Shutdown сервиса]] · [[course/02-go/03-concurrency|Конкурентность Go]]
 
 ## Источники
 
