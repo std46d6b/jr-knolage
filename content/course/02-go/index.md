@@ -5,7 +5,7 @@ tags:
   - go
   - interview
   - 02-go
-status: in-progress
+status: complete
 difficulty: e4
 draft: false
 ---
