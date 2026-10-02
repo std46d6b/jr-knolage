@@ -1,0 +1,8 @@
+.git
+node_modules
+public
+.quartz
+.quartz-cache
+.DS_Store
+PLAN.md
+private
