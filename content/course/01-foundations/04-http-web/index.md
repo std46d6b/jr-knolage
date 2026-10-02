@@ -26,9 +26,9 @@ HTTP — прикладной протокол обмена сообщениям
 4. [[course/01-foundations/04-http-web/04-http-3-quic|HTTP/3 и QUIC]] — UDP-транспорт, независимые потоки и миграция соединения.
 5. [[course/01-foundations/04-http-web/05-rest-api-design|REST и дизайн API]] — ресурсы, идемпотентность, пагинация и ошибки.
 6. [[course/01-foundations/04-http-web/06-rpc-grpc|RPC и gRPC]] — контракт, protobuf, streaming и deadline.
-7. [[course/01-foundations/04-http-web/07-realtime-websocket-sse|Realtime: WebSocket и SSE]] — однонаправленные и двунаправленные события.
-8. [[course/01-foundations/04-http-web/08-browser-security-state|Браузерная безопасность и state]] — cookies, CORS, CSRF, SameSite и сессии.
-9. [[course/01-foundations/04-http-web/09-api-compatibility|Совместимость API]] — additive changes, versioning и rollout.
+7. [[course/01-foundations/04-http-web/07-websocket-sse-long-polling|Realtime: WebSocket, SSE и long polling]] — однонаправленные и двунаправленные события.
+8. [[course/01-foundations/04-http-web/08-cookies-sessions-cors-csrf|Браузерная безопасность и state]] — cookies, CORS, CSRF, SameSite и сессии.
+9. [[course/01-foundations/04-http-web/09-api-versioning-compatibility|Совместимость API]] — additive changes, versioning и rollout.
 
 ## Зачем это на интервью
 

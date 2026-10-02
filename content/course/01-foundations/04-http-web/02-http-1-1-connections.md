@@ -1,5 +1,5 @@
 ---
-title: HTTP/1.1: соединения и ограничения
+title: "HTTP/1.1: соединения и ограничения"
 description: Persistent connections, порядок ответов, pipeline, head-of-line blocking и эксплуатация HTTP/1.1.
 tags:
   - http

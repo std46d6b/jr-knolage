@@ -34,6 +34,8 @@ draft: false
 Рассмотрим создание заказа. Handler преобразует HTTP-запрос в команду, проверяет формат и выбирает ответ. Use case проверяет бизнес-инварианты: доступность товара, права клиента, переход статуса. Repository скрывает SQL и транзакционные детали. Это не запрет на вызовы между слоями, а способ не позволять изменению URL, драйвера БД или бизнес-правила затронуть весь код одновременно.
 
 ```go
+import "errors"
+
 type CreateOrder struct {
     products ProductCatalog
     orders   OrderRepository
@@ -48,13 +50,15 @@ func (uc CreateOrder) Execute(ctx context.Context, customerID string, items []It
     }
     order := NewOrder(customerID, items)
     if err := uc.orders.Save(ctx, order); err != nil {
-        return Order{}, err
+        // Release должна быть идемпотентной; при ошибке её нужно повторить
+        // через надёжную компенсацию и поднять алерт.
+        return Order{}, errors.Join(err, uc.products.Release(ctx, items))
     }
     return order, nil
 }
 ```
 
-HTTP-handler может вызвать `Execute`, но `CreateOrder` не должен знать об `http.Request`, JSON или конкретном драйвере PostgreSQL. Если цена ошибки вызова важна, бизнесовый тип ошибки переводится в HTTP-ответ на границе transport.
+HTTP-handler может вызвать `Execute`, но `CreateOrder` не должен знать об `http.Request`, JSON или конкретном драйвере PostgreSQL. Здесь резервирование и сохранение не являются одной транзакцией, поэтому при ошибке `Save` требуется компенсация `Release`; для более строгой гарантии нужны общая транзакционная граница или durable workflow/outbox. Если цена ошибки вызова важна, бизнесовый тип ошибки переводится в HTTP-ответ на границе transport.
 
 ## Углубление для E5/Senior
 

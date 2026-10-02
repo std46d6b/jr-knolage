@@ -27,9 +27,9 @@ draft: false
 ## Темы
 
 - [[course/01-foundations/01-os|Модель вычислений и ОС]]: процессы, потоки, виртуальная память, файловые дескрипторы, сигналы, IPC и syscalls.
-- Память и производительность: Big O, амортизированная сложность, CPU cache, locality и tail latency.
-- Базовые принципы проектирования: SOLID, KISS, YAGNI, composition over inheritance и границы абстракций.
-- HTTP и Web-основы: HTTP/1.1–3, REST, gRPC, WebSocket/SSE, cookies, CORS и идемпотентность.
+- [[course/01-foundations/02-performance|Память и производительность]]: Big O, амортизированная сложность, CPU cache, locality, allocation rate, GC pressure и tail latency.
+- [[course/01-foundations/03-design-principles|Базовые принципы проектирования]]: separation of concerns, SOLID, KISS, YAGNI, composition over inheritance, dependency injection и границы абстракций.
+- [[course/01-foundations/04-http-web|HTTP и Web-основы]]: HTTP/1.1–3, REST, gRPC, WebSocket/SSE, cookies, CORS, CSRF, идемпотентность и совместимость API.
 
 ## Ключевые понятия
 

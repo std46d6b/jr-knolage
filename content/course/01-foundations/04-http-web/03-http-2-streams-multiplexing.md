@@ -1,5 +1,5 @@
 ---
-title: HTTP/2: streams и мультиплексирование
+title: "HTTP/2: streams и мультиплексирование"
 description: Фреймы, streams, flow control, HPACK, приоритизация и реальные ограничения HTTP/2 поверх TCP.
 tags:
   - http
